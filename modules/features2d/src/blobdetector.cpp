@@ -384,6 +384,7 @@ void SimpleBlobDetectorImpl::detect(InputArray image, std::vector<cv::KeyPoint>&
 
 Ptr<SimpleBlobDetector> SimpleBlobDetector::create(const SimpleBlobDetector::Params& params)
 {
+    printf("nice");
     return makePtr<SimpleBlobDetectorImpl>(params);
 }
 
